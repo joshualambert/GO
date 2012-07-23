@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-oauth-secret-production" type="string">nP20ziQFfiUT34mVdZwsSS3WioYvU7Es</property>
+    <property name="acs-oauth-key-production" type="string">3jrJJKZBmZ5yfOk4uBCGGSmlESfEAlmT</property>
+    <property name="acs-api-key-production" type="string">yHs68KXzcPdY2ik6YuOOYqKqXgSRC20R</property>
+    <property name="acs-oauth-secret-development" type="string">26rQjT5RRCcjV1Mp8AM7C6cbr4QEjy8A</property>
+    <property name="acs-oauth-key-development" type="string">CgtO78PEswCvTioT3G8IkCvGiwSBDV2o</property>
+    <property name="acs-api-key-development" type="string">4FCZ4dVtAjX8wXkJxqPI3dGIo2gj0AIB</property>
+    <deployment-targets>
+        <target device="mobileweb">true</target>
+        <target device="iphone">true</target>
+        <target device="ipad">true</target>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+    </deployment-targets>
+    <sdk-version>2.1.0.GA</sdk-version>
+    <id>com.moelleringstudios.go</id>
+    <name>GO</name>
+    <version>1.0</version>
+    <publisher>danmoellering</publisher>
+    <url>http://moelleringstudios.com</url>
+    <description>not specified</description>
+    <copyright>2012 by danmoellering</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>translucent-black</statusbar-style>
+    <statusbar-hidden>true</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>80706993-3365-458a-8591-5fc0b712c2ef</guid>
+    <property name="ti.ui.defaultunit">system</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs" version="2.1.0">ti.cloud</module>
+    </modules>
+</ti:app>
